@@ -22,7 +22,7 @@ public class Main extends Application {
         //---------------------------------------------
         // Controller ist für Funktionlität zuständig
         //---------------------------------------------
-        loader.setController(new Controller());
+        loader.setController(new PassiveView());
 
         //---------------------------------------------
         // Layout laden und in Fenster setzen
