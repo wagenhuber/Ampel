@@ -2,11 +2,14 @@
 class Presenter {
 
     private final PassiveView view;
-    private final Model model;
+    private Model model;
 
     Presenter(PassiveView view) {
         this.view = view;
-        model = new Model(this);
+    }
+
+    void setModel(Model model) {
+        this.model = model;
     }
 
     void buttonWeiter() {
@@ -37,4 +40,5 @@ class Presenter {
                 break;
         }
     }
+
 }

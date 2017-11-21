@@ -26,8 +26,12 @@ class PassiveView implements Initializable {
     //---------------------------------------------
     // Sonstige Membervariablen
     //---------------------------------------------
-    private Presenter presenter;
-    
+    private Presenter presenter;    
+
+    void setPresenter(Presenter presenter) {
+        this.presenter = presenter;
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //---------------------------------------------
@@ -40,7 +44,6 @@ class PassiveView implements Initializable {
         //---------------------------------------------
         // Start
         //---------------------------------------------
-        this.presenter = new Presenter(this);
     }
 
     public void rotAn() {
@@ -66,4 +69,5 @@ class PassiveView implements Initializable {
     public void gruenAus() {
         circleGruen.setFill(Color.BLACK);
     }
+
 }

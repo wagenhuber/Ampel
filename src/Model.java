@@ -1,13 +1,13 @@
 
 class Model {
 
-    private final Presenter presenter;
+    private Presenter presenter;
     private Ampelphase phase;
 
     Model(Presenter presenter) {
         this.presenter = presenter;
         phase = Ampelphase.ROT;
-        presenter.displayPhase(phase);
+        //presenter.displayPhase(phase);
     }
 
     void weiter() {
@@ -26,6 +26,6 @@ class Model {
                 break;
         }
         presenter.displayPhase(phase);
-    }
+    }    
 
 }
