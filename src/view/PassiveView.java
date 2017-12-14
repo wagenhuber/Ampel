@@ -1,4 +1,6 @@
+package view;
 
+import presenter.Presenter;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.*;
@@ -6,7 +8,7 @@ import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-class PassiveView implements Initializable {
+public class PassiveView implements Initializable {
 
     //---------------------------------------------
     // Membervariablen für Steuerelemente
@@ -27,10 +29,6 @@ class PassiveView implements Initializable {
     // Sonstige Membervariablen
     //---------------------------------------------
     private Presenter presenter;    
-
-    void setPresenter(Presenter presenter) {
-        this.presenter = presenter;
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

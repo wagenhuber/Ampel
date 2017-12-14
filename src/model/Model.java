@@ -1,16 +1,20 @@
+package model;
 
-class Model {
+import presenter.Presenter;
+
+
+public class Model {
 
     private Presenter presenter;
     private Ampelphase phase;
 
-    Model(Presenter presenter) {
+    public Model(Presenter presenter) {
         this.presenter = presenter;
         phase = Ampelphase.ROT;
         presenter.displayPhase(phase);
     }
 
-    void weiter() {
+    public void weiter() {
         switch (phase) {
             case ROT:
                 phase = Ampelphase.ROTGELB;

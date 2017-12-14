@@ -1,19 +1,25 @@
+package presenter;
 
-class Presenter {
+
+import model.*;
+import view.PassiveView;
+
+
+public class Presenter {
 
     private final PassiveView view;
-    private Model model;
+    private final Model model;
 
-    Presenter(PassiveView view) {
+    public Presenter(PassiveView view) {
         this.view = view;
         model = new Model(this);
     }
 
-    void buttonWeiter() {
+    public void buttonWeiter() {
         model.weiter();
     }
 
-    void displayPhase(Ampelphase phase) {
+    public void displayPhase(Ampelphase phase) {
         switch (phase) {
             case ROT:
                 view.rotAn();
