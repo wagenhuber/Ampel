@@ -44,6 +44,7 @@ class PassiveView implements Initializable {
         //---------------------------------------------
         // Start
         //---------------------------------------------
+        presenter = new Presenter(this);
     }
 
     public void rotAn() {

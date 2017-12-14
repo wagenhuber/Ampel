@@ -12,16 +12,7 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage fenster) throws Exception {
-        //---------------------------------------------
-        // Instanzen erstellen
-        //---------------------------------------------
-        PassiveView passiveView = new PassiveView();
-        Presenter presenter = new Presenter(passiveView);
-        Model model = new Model(presenter);        
-        passiveView.setPresenter(presenter);
-        presenter.setModel(model);        
-        
+    public void start(Stage fenster) throws Exception {        
         //---------------------------------------------
         // Vorbereitungen zum Laden des Layouts
         //---------------------------------------------
@@ -31,7 +22,7 @@ public class Main extends Application {
         //---------------------------------------------
         // Controller ist für Funktionlität zuständig
         //---------------------------------------------
-        loader.setController(passiveView);
+        loader.setController(new PassiveView());
 
         //---------------------------------------------
         // Layout laden und in Fenster setzen

@@ -6,10 +6,7 @@ class Presenter {
 
     Presenter(PassiveView view) {
         this.view = view;
-    }
-
-    void setModel(Model model) {
-        this.model = model;
+        model = new Model(this);
     }
 
     void buttonWeiter() {

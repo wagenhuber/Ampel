@@ -7,7 +7,7 @@ class Model {
     Model(Presenter presenter) {
         this.presenter = presenter;
         phase = Ampelphase.ROT;
-        //presenter.displayPhase(phase);
+        presenter.displayPhase(phase);
     }
 
     void weiter() {
