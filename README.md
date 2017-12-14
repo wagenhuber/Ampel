@@ -1,2 +1,2 @@
 # Ampel
-JavaFX: Traffic light without functionality
+JavaFX: Traffic light with little functionality
